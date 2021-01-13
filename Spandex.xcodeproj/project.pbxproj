@@ -3,17 +3,33 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		47B999D825AE66F600A1DD01 /* SpandexTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47B999D625AE66F600A1DD01 /* SpandexTests.swift */; };
+		47B999D925AE66F600A1DD01 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 47B999D725AE66F600A1DD01 /* Info.plist */; };
+		47B999E225AEA4E700A1DD01 /* Sauce in Frameworks */ = {isa = PBXBuildFile; productRef = 47B999E125AEA4E700A1DD01 /* Sauce */; };
 		47BEB8B225ABE05F00689136 /* SpandexApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47BEB8B125ABE05F00689136 /* SpandexApp.swift */; };
 		47BEB8B425ABE05F00689136 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47BEB8B325ABE05F00689136 /* ContentView.swift */; };
 		47BEB8B625ABE06000689136 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 47BEB8B525ABE06000689136 /* Assets.xcassets */; };
 		47BEB8B925ABE06000689136 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 47BEB8B825ABE06000689136 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		47B999CE25AE66E200A1DD01 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 47BEB8A625ABE05F00689136 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 47BEB8AD25ABE05F00689136;
+			remoteInfo = Spandex;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		47B999C925AE66E200A1DD01 /* SpandexTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpandexTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		47B999D625AE66F600A1DD01 /* SpandexTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpandexTests.swift; sourceTree = "<group>"; };
+		47B999D725AE66F600A1DD01 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		47BEB8AE25ABE05F00689136 /* Spandex.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Spandex.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		47BEB8B125ABE05F00689136 /* SpandexApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpandexApp.swift; sourceTree = "<group>"; };
 		47BEB8B325ABE05F00689136 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -24,20 +40,38 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		47BEB8AB25ABE05F00689136 /* Frameworks */ = {
+		47B999C625AE66E200A1DD01 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		47BEB8AB25ABE05F00689136 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				47B999E225AEA4E700A1DD01 /* Sauce in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		47B999D525AE66F600A1DD01 /* SpandexTests */ = {
+			isa = PBXGroup;
+			children = (
+				47B999D625AE66F600A1DD01 /* SpandexTests.swift */,
+				47B999D725AE66F600A1DD01 /* Info.plist */,
+			);
+			path = SpandexTests;
+			sourceTree = "<group>";
+		};
 		47BEB8A525ABE05F00689136 = {
 			isa = PBXGroup;
 			children = (
 				47BEB8B025ABE05F00689136 /* Spandex */,
+				47B999D525AE66F600A1DD01 /* SpandexTests */,
 				47BEB8AF25ABE05F00689136 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -46,6 +80,7 @@
 			isa = PBXGroup;
 			children = (
 				47BEB8AE25ABE05F00689136 /* Spandex.app */,
+				47B999C925AE66E200A1DD01 /* SpandexTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -74,6 +109,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		47B999C825AE66E200A1DD01 /* SpandexTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 47B999D025AE66E200A1DD01 /* Build configuration list for PBXNativeTarget "SpandexTests" */;
+			buildPhases = (
+				47B999C525AE66E200A1DD01 /* Sources */,
+				47B999C625AE66E200A1DD01 /* Frameworks */,
+				47B999C725AE66E200A1DD01 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				47B999CF25AE66E200A1DD01 /* PBXTargetDependency */,
+			);
+			name = SpandexTests;
+			productName = SpandexTests;
+			productReference = 47B999C925AE66E200A1DD01 /* SpandexTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		47BEB8AD25ABE05F00689136 /* Spandex */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 47BEB8BE25ABE06000689136 /* Build configuration list for PBXNativeTarget "Spandex" */;
@@ -87,6 +140,9 @@
 			dependencies = (
 			);
 			name = Spandex;
+			packageProductDependencies = (
+				47B999E125AEA4E700A1DD01 /* Sauce */,
+			);
 			productName = Spandex;
 			productReference = 47BEB8AE25ABE05F00689136 /* Spandex.app */;
 			productType = "com.apple.product-type.application";
@@ -100,6 +156,10 @@
 				LastSwiftUpdateCheck = 1230;
 				LastUpgradeCheck = 1230;
 				TargetAttributes = {
+					47B999C825AE66E200A1DD01 = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = 47BEB8AD25ABE05F00689136;
+					};
 					47BEB8AD25ABE05F00689136 = {
 						CreatedOnToolsVersion = 12.3;
 					};
@@ -114,16 +174,28 @@
 				Base,
 			);
 			mainGroup = 47BEB8A525ABE05F00689136;
+			packageReferences = (
+				47B999E025AEA4E700A1DD01 /* XCRemoteSwiftPackageReference "Sauce" */,
+			);
 			productRefGroup = 47BEB8AF25ABE05F00689136 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				47BEB8AD25ABE05F00689136 /* Spandex */,
+				47B999C825AE66E200A1DD01 /* SpandexTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		47B999C725AE66E200A1DD01 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				47B999D925AE66F600A1DD01 /* Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		47BEB8AC25ABE05F00689136 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -136,6 +208,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		47B999C525AE66E200A1DD01 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				47B999D825AE66F600A1DD01 /* SpandexTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		47BEB8AA25ABE05F00689136 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -147,7 +227,55 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		47B999CF25AE66E200A1DD01 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 47BEB8AD25ABE05F00689136 /* Spandex */;
+			targetProxy = 47B999CE25AE66E200A1DD01 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		47B999D125AE66E200A1DD01 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = QC99C9JE59;
+				INFOPLIST_FILE = SpandexTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kitlangton.SpandexTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Spandex.app/Contents/MacOS/Spandex";
+			};
+			name = Debug;
+		};
+		47B999D225AE66E200A1DD01 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = QC99C9JE59;
+				INFOPLIST_FILE = SpandexTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kitlangton.SpandexTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Spandex.app/Contents/MacOS/Spandex";
+			};
+			name = Release;
+		};
 		47BEB8BC25ABE06000689136 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -314,6 +442,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		47B999D025AE66E200A1DD01 /* Build configuration list for PBXNativeTarget "SpandexTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				47B999D125AE66E200A1DD01 /* Debug */,
+				47B999D225AE66E200A1DD01 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		47BEB8A925ABE05F00689136 /* Build configuration list for PBXProject "Spandex" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -333,6 +470,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		47B999E025AEA4E700A1DD01 /* XCRemoteSwiftPackageReference "Sauce" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Clipy/Sauce";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		47B999E125AEA4E700A1DD01 /* Sauce */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 47B999E025AEA4E700A1DD01 /* XCRemoteSwiftPackageReference "Sauce" */;
+			productName = Sauce;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 47BEB8A625ABE05F00689136 /* Project object */;
 }
